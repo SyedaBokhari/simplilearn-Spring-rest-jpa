@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>User DB Data</title>
+<link rel="stylesheet" th:href="@{/styles/main.css}" />
+</head>
+<body>
+  <div th:replace="~{fragments :: header}"></div>
+  <br>
+  <h2>User Search</h2>
+  <form>
+    <table>
+      <tr>
+        <th>User Id:</th>
+        <td><input type="text" id="id"></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="button" id="search" value="Search">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div class="table">
+  </div>
+  <div th:replace="~{fragments :: scripts}"></div>
+  <script th:src="@{/js/search.js}"></script>
+</body>
+</html>

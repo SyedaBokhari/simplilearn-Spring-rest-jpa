@@ -1,0 +1,33 @@
+@charset "ISO-8859-1";
+
+body {
+	padding: 20px 50px;
+	font-size: 1.1em
+}
+
+li {
+	font-size: 1.2em
+}
+
+table, th, td {
+    padding: 10px;
+    text-align: left;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+
+
+table.errorpage td {
+    vertical-align: top;
+    border: solid 1px #888;
+     padding: 10px;
+}
+
+span.error-message {
+    color: red;
+}
+
+input[readonly] {
+    background-color: lightgray ;
+}
